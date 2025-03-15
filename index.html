@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Html</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+        <div class="wrapper">
+            <header class="header-nav">
+                <nav class="nav">
+                    <h1 class="nav_logo">DJADJA.</h1>
+                    <UL class="nav-item">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <a href="login.html"><button class="logout_btn">LOG OUT</button></a>
+                    </UL>
+                     <!-- <label for="check" class="Hamburger">
+                        <i class="fa-solid fa-bars toggle-btn"></i>
+                     </label> -->
+
+                     <div class="hamburger" onclick="toggleMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                     </div>
+                </nav>
+            
+            </header>
+        
+            <Section id="home">
+            <main class="Home">
+                <div class="content-one">
+                    <h1 class="text-1">Hi, I'm Djamila.</h1>
+                    <h2 class="text-2"> Graphic Designer.</h2>
+                    <a href="about"><button class="About">About me</button></a>
+                </div>
+                    <div class="Image1">
+                        <img src="Items/2.png"width="300"height="300"/>
+                    </div>
+                </div>
+                </main>
+            </Section>
+            <section id="about">
+                <div class="About-me">
+                    <img src="Items/2.png"width="200"height="200"/>
+                    <p class="text-3"> My name is Djamila Ndamanisha,IT Networking student at UNILAK.Interest in Cyber Security and UI/UX design.
+                        I’m currently a graphic content creator.</p>
+                </div>
+            </section>
+            <section id="projects">
+                <div class="projects">
+                    <div class="Proje"></div>
+                    <h1 class="container-3">Projects</h1>
+                    <img class="first" src="Items/3.png" width="200"height="200"/>
+                    <img class="second" src="Items/4.png" width="200"height="200"/>
+                    <img class="third" src="Items/5.png" width="200"height="200"/>
+                </div>
+            </section>
+            <section>
+                <div class="Footer">
+                <a href="Contact.html"><button class="Contact-me">GET IN TOUCH</button></a>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                </div>
+            </section>
+
+            <script>
+                function toggleMenu(){
+                    const navItem= document.querySelector('.nav-item');
+                    navItem.classList.toggle('active');
+                }
+                
+            // </script>
+            //     <div class="copyri">
+            //         <span class="copyright">Copyright @ 2023</span>
+            //     </div>
+                
+    </div>
+</body>
+</html>
