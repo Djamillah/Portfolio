@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./main.css">
+    <title>Get in TOUCH</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-nav">
+            <nav class="nav">
+                <h1 class="nav_logo">DJADJA.</h1>
+                <UL class="nav-item">
+                    <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <a href="login.html"><button class="logout_btn">LOG OUT</button></a>
+                </UL>
+                 <!-- <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                 </label> -->
+
+                 <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                 </div>
+            </nav>
+        </header>
+
+    <footer class="footer">
+        <div class="first">
+            <h1>N&D</h1>
+            <h2>Contact: +250785219441</h2>
+            <h3>Privacy Policy</h3>
+        </div>
+
+        <div class="second">
+            <ul>
+                <li>Support</li>
+                <li>Contact</li>
+                <li>Services</li>
+                <li>Products</li>
+                <li>Business</li>
+            </ul>
+
+            <span class="copyright">Copyright @ 2023</span>
+        </div>
+
+        <div class="third">
+            <form action="#">
+                <input type="text" placeholder="Email Address" />
+                <button class="btn">Subscribe</button>
+            </form>
+            <div class="socials">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+        <script>
+            function toggleMenu(){
+                const navItem= document.querySelector('.nav-item');
+                navItem.classList.toggle('active');
+            }
+            
+        </script>
+    </footer>
+</body>
+</html>

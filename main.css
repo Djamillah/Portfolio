@@ -1,0 +1,358 @@
+
+/*Code for navigation*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header-nav{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;/*where you want your position to be fixed*/
+}
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    padding: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+.nav a{
+    display: flex;
+    justify-content:space-around;
+    color: #ffffff;
+    font-weight: bold;
+}
+.nav-item{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.nav-item a:hover{
+    color:rgb(65, 133, 211);
+    transition: 0.6s;
+    cursor: pointer;
+}
+.nav_logo{
+    font-size: 2.5rem;
+    color: rgb(65, 133, 211);
+    cursor: pointer;
+    text-shadow: 3px 3px white;
+}
+.logout_btn{
+    color: black;
+    /*background-color:rgb(253, 205, 255);*/
+    background-image: linear-gradient( white,rgb(65, 133, 211));
+    border-radius: 10%;
+    padding: 10px;
+    margin-left: 10rem;
+}
+.logout_btn:hover{
+    color: white;
+    background-color:black;
+    border-radius: 10%;
+    padding: 10px;
+    margin-left: 10rem;/*Problem*/
+}
+
+.hamburger{
+    font-size: 40px;
+    transition: all 0.3s ease-in-out ;
+    display: none;
+}
+/*Next is the second part of code*/
+.Home{
+    background-color: black;
+    /*background-image: linear-gradient( black, rgb(65, 133, 211), black);*/
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+    padding-top: 9rem;
+    padding-bottom: 3px;
+}
+.Image1 img{
+    border-radius: 10rem;
+    margin-top:30px;
+    margin-right: 1rem;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+    height: 25rem;
+}
+.content-one{
+    padding-left: 10rem;
+    padding-top: 5rem;
+    color: black;
+   
+}
+.content-one .text-1{
+    font-size: 3rem;
+    color: #ffffff;
+}
+.content-one .text-2{
+    color: rgb(65, 133, 211);
+}
+.content-one button{
+    color: white;
+    /*background-color:rgb(253, 205, 255);*/
+    background-color: black;
+    border-radius: 50%;
+    padding: 30px;
+    margin-top: 1rem;
+    border-color: #ffffff;
+   
+}
+.content-one button:hover{
+    background-color:white;
+    border-radius: 50%;
+    color:black;
+    cursor: pointer;
+}
+
+/*Next is the third part of code*/
+
+.About-me{
+    background-image: linear-gradient( rgb(65, 133, 211),black,rgb(65, 133, 211));
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+
+}
+.About-me .text-3{
+    word-break: break-all;
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    word-spacing: 10px;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    width: 33.3%;
+}
+.About-me img{
+    height:25rem;
+    width: 25rem;
+    border-radius: 180px;
+}
+
+/*The fourth of the code*/
+
+.projects{
+    height: 100;
+    width: 100%;
+    background-color: black;
+   /* background-image: conic-gradient( rgb(65, 133, 211),black,rgb(65, 133, 211));*/
+    padding: 3rem;
+    color: white;
+    display: flex;
+
+}
+.projects .container-3{
+    color:white;
+    text-align: center;
+}
+.projects img{
+    padding: 4rem;
+    width: 30.3%;
+    height: 50%;
+}
+
+/*Final part of the code ,contact*/
+.Footer  {
+    background-color:rgb(65, 133, 211);
+    width: 100%;
+    padding: 3rem;
+}
+.Footer .Contact-me{
+    
+    padding: 1rem;
+    background-color: black;
+    color: #ffffff;
+    margin: 0.1rem;
+    align-self: center;
+
+}
+.Footer .Contact-me:hover{
+    color:  rgb(65, 133, 211);
+}
+
+.footer {
+    background-image: linear-gradient( rgb(65, 133, 211) -5px, black);
+	width: 100%;
+	height: 50rem;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10rem;
+	flex-wrap: wrap;
+    margin-top: 4rem;
+    position: fixed;
+    
+    
+}
+
+.first h1 {
+	font-size: 3rem;
+	color: black;
+    text-shadow: 5px 5px white;
+}
+
+.first h2 {
+	margin-bottom: 1rem;
+}
+
+.second {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	text-align: center;
+}
+
+.second ul {
+	font-size: 1.3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.third {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.third form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.third form input {
+	padding: 0.5rem;
+	width: 15rem;
+}
+
+.third form button {
+	width: 6rem;
+	border: none;
+	padding: 0.5rem;
+	font-size: 1rem;
+	background-color:rgb(65, 133, 211);
+}
+
+.third .socials {
+	display: flex;
+	font-size: 2rem;
+	gap: 1rem;
+   
+}
+.copyright {
+	font-size: 1.5rem;
+    color: white;
+}
+
+.nav-items.show-list {
+	transform: translateX(0);
+}
+.form{
+    background-color: black;
+    padding: 4rem;
+}
+.form form{
+    color: #ffffff;
+}
+.form button{
+    background-image: linear-gradient( white,rgb(65, 133, 211));
+}
+
+.copyri{
+    background-color: black;
+    padding: 1rem;
+    position: static;
+    text-align: center;
+    
+}
+section .Footer{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+ .Footer .socials{
+    color: black;
+    gap: 4rem;
+    align-content: center;
+ }
+
+ @media(max-width:960px){
+    header{
+        padding: 0.5%;
+    }
+}
+
+ @media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger:hover{
+        color: rgb(65, 133, 211);
+    }
+    .hamburger.active::after\\{
+        content: "\f00d";
+    }
+    .nav-item{
+        position: absolute; 
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color:black;
+        padding: o.5%;
+        display: block;
+        flex-direction: column;
+        align-content: center;
+        gap: 0;
+        /* transition: 0.3s; */
+        margin: 0;
+        box-shadow: 0 1rem 1rem rgb(65, 133, 211);
+        transform: scale(0);
+        transition:.8s;
+    }
+    .nav-item a{
+        display: block;
+        margin: 1rem;
+
+        left: 100%;
+    }
+    .nav-item.active{
+        left: 0;
+        transform: scale(1);
+        
+    }
+.logout_btn{
+    margin-left: 0.5px;
+}
+.nav-item.active a{
+    left: 0;
+    
+
+}
+ }
